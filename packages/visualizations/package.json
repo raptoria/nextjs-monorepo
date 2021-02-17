@@ -1,0 +1,17 @@
+{
+    "name": "@test/visualizations",
+    "version": "1.0.0",
+    "description": "shared graphs and charts",
+    "main": "src/index.tsx",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "peerDependencies": {
+        "@types/react": "^16.8.6 || ^17.0.0",
+        "react": "^16.8.0 || ^17.0.0",
+        "styled-components": "^5.2.1"
+    },
+    "dependencies": {
+        "react-flow-renderer": "^8.8.0"
+    }
+}

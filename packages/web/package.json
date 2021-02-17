@@ -1,0 +1,22 @@
+{
+    "name": "@test/web",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next -p 3000",
+        "build": "next build",
+        "start": "next start -p 3000"
+    },
+    "dependencies": {
+        "@test/components": "^1.0.0",
+        "@test/visualizations": "^1.0.0"
+    },
+    "peerDependencies": {
+        "@types/react": "^16.8.6 || ^17.0.0",
+        "react": "^16.8.0 || ^17.0.0",
+        "@types/next": "^9.0.0",
+        "next": "^9.4.4",
+        "next-transpile-modules": "^6.3.0",
+        "antd": "^4.12.3"
+    }
+}
