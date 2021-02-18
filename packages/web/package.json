@@ -12,11 +12,11 @@
         "@test/visualizations": "^1.0.0"
     },
     "peerDependencies": {
-        "@types/react": "^16.8.6 || ^17.0.0",
-        "react": "^16.8.0 || ^17.0.0",
-        "@types/next": "^9.0.0",
-        "next": "^9.4.4",
+        "@types/react": ">= 16.8.0",
+        "react": ">= 16.8.0",
+        "react-dom": ">= 16.8.0",
+        "styled-components": ">= 5.2.1",
         "next-transpile-modules": "^6.3.0",
-        "antd": "^4.12.3"
+        "antd": ">= 4.12.3"
     }
 }
