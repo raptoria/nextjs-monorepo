@@ -10,14 +10,7 @@ interface DagProps {
 
 const DagViewer: React.FC<DagProps> = () => {
     const [data, setData] = useState([]);
-    useEffect(() => {
-        const fetchData = async () => {
-            const result = await axios('https://www.ag-grid.com/example-assets/olympic-winners.json');
-            setData(result.data);
-        };
 
-        fetchData();
-    }, [])
     return (
         <Layout title="Test UI" subTitle="Dag Viewer" extra={createNavButtons(routes)}>
             <PageContainer>
