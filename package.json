@@ -4,7 +4,7 @@
     "private": true,
     "main": "index.js",
     "scripts": {
-        "bootstrap": "npm install; lerna bootstrap;",
+        "bootstrap": "npm install; lerna bootstrap --hoist;",
         "package:web": "lerna run --scope @test/web --stream dev",
         "start": "run-p --print-label package:*",
         "build": "lerna run --parallel build"
