@@ -5,9 +5,12 @@
     "main": "index.js",
     "scripts": {
         "bootstrap": "npm install; lerna bootstrap --hoist;",
-        "package:web": "lerna run --scope @test/web --stream dev",
-        "start": "run-p --print-label package:*",
-        "build": "lerna run --parallel build"
+        "package-dev:web": "lerna run --scope @test/web --stream dev",
+        "package-build:web": "lerna run --scope @test/web --stream build",
+        "package-start:web": "lerna run --scope @test/web --stream start",
+        "dev": "run-p --print-label package-dev:*",
+        "build": "lerna run --parallel build",
+        "start": "lerna run --parallel start"
     },
     "devDependencies": {
         "@types/next": "^9.0.0",
@@ -19,7 +22,7 @@
         "eslint": "^7.19.0",
         "lerna": "^3.22.1",
         "prettier": "2.2.1",
-        "typescript": "^3.9.9"
+        "typescript": "^4.1.5"
     },
     "dependencies": {
         "antd": "^4.12.3",
