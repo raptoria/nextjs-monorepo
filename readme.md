@@ -1,3 +1,13 @@
+### Docker Instructions
+
+If you have Docker installed you can build a development image with the command
+
+    docker build -t test-ui .
+
+You can then run the development server.
+
+    docker run -i -t --rm -p 127.0.0.1:3000:3000 test-ui
+
 ### Node.js Instructions
 
 install lerna

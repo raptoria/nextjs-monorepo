@@ -10,7 +10,7 @@ RUN npm install -g lerna
 
 RUN npm run bootstrap
 
-RUN package-build:web
+RUN npm run package-build:web
 
 ENTRYPOINT ["/usr/local/bin/npm", "run"]
 
